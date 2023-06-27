@@ -5,7 +5,13 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+
+  /* fondo de la pagina */
+
+  background-image: url("https://images.pexels.com/photos/10195371/pexels-photo-10195371.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
