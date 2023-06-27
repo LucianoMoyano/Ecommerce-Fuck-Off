@@ -2,7 +2,7 @@ import React from "react";
 
 import "./style.css";
 
-export const MiSegundoComponente = () => {
+export const Subtitle = () => {
   return (
     <>
       <div>
