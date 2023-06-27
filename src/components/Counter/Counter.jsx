@@ -1,18 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
+
+//Botones de react-icons
+import { IoIosAddCircleOutline } from "react-icons/io";
+import { IoMdRemoveCircleOutline } from "react-icons/io";
 
 export const Counter = () => {
-  //Ejemplo 1
+  const [counter, setCounter] = useState(0);
 
-  const botonPresionado = () => {
-    console.log("Estas son las veces que presionamos el boton");
+  const handleAdd = () => {
+    setCounter(counter + 1);
+  };
+
+  const handleRemove = () => {
+    if (counter > 0) {
+      setCounter(counter - 1);
+    }
   };
 
   return (
     <>
       <div>
-        <h3>Mis estados</h3>
+        <h3>{counter}</h3>
         <hr />
-        <button onClick={botonPresionado}>Apretame y mira la consola</button>
+        <button style={{ margin: 5 }} onClick={handleAdd}>
+          <IoIosAddCircleOutline />
+        </button>
+        <button onClick={handleRemove}>
+          <IoMdRemoveCircleOutline />
+        </button>
       </div>
     </>
   );
