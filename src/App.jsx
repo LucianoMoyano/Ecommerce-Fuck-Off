@@ -1,21 +1,23 @@
-import { useState } from "react";
-
 import "./App.css";
-
 import React from "react";
 import { Subtitle } from "./components/Subtitulo/Subtitle";
+import { NavBar } from "./components/NavBar/NavBar";
 import { ProductList } from "./components/ProductList/ProductList";
 
-export default function App() {
-  const [count, setCount] = useState(0);
+// rutas del sistema
 
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+export default function App() {
   return (
     <>
-      <div>
-        <h1> Fuck Off ©</h1>
-        <Subtitle />
-        <ProductList />
-      </div>
+      <Router>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Subtitle />} />
+          <Route path="/productos" element={<ProductList />} />
+        </Routes>
+      </Router>
     </>
   );
 }
