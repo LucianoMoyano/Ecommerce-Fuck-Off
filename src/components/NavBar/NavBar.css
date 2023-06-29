@@ -1,3 +1,6 @@
+* {
+  font-family: "Rubik", sans-serif;
+}
 .navbar {
   background-color: #f8f8f8;
   width: 100%;
@@ -16,7 +19,7 @@
 }
 
 .navbar ul li {
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
 .navbar ul li:last-child {

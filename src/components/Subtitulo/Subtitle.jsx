@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import "./style.css";
 
@@ -13,11 +15,32 @@ export const Subtitle = () => {
         <br />
         You have to be proud of yourself "
       </h3>
-      <img
-        src="https://images.pexels.com/photos/11281577/pexels-photo-11281577.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
-        alt="Espacio Fuck Off"
-        className="image"
-      />
+      <Carousel
+        showArrows={true}
+        showThumbs={false}
+        showStatus={false}
+        infiniteLoop={true}
+        emulateTouch={true}
+        swipeable={true}
+        showIndicators={false}
+        interval={5000}
+      >
+        <div>
+          <img
+            src="https://images.pexels.com/photos/13457488/pexels-photo-13457488.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+            alt="Espacio Fuck Off"
+            className="image"
+          />
+        </div>
+        <div>
+          <img
+            src="https://images.pexels.com/photos/13457490/pexels-photo-13457490.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+            alt="Espacio Fuck Off"
+            className="image"
+          />
+        </div>
+        {/* Agrega más elementos div si tienes más imágenes */}
+      </Carousel>
       <p className="description">
         Te invitamos a sumarte al Espacio Fuck Off, donde puedes conectarte
         contigo misma a través de diferentes actividades como bailar, correr,
@@ -26,11 +49,13 @@ export const Subtitle = () => {
       <p className="description">
         <em className="grande">#ConectáConVos</em>
       </p>
-      <img
-        src="https://images.pexels.com/photos/9546375/pexels-photo-9546375.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
-        alt="Espacio Fuck Off"
-        className="image"
-      />
+      <div>
+        <img
+          src="https://images.pexels.com/photos/11281577/pexels-photo-11281577.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+          alt="Espacio Fuck Off"
+          className="image"
+        />
+      </div>
       <div className="contact-form">
         <h2>Envíanos un mensaje</h2>
         <form action="https://formspree.io/f/xyyqgnqr" method="POST">
