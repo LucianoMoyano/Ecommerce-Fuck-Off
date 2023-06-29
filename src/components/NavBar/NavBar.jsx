@@ -1,6 +1,6 @@
 import React from "react";
-
 import { Link } from "react-router-dom";
+import { Cart } from "../Cart/Cart"; // Importa el componente Cart correctamente
 
 import "./NavBar.css";
 
@@ -17,11 +17,12 @@ export const NavBar = () => {
         <li>
           <Link to="/nosotros">Nosotros</Link>
         </li>
+        <li>
+          <Link to="/cart">
+            <Cart />
+          </Link>
+        </li>
       </ul>
-      <div className="search">
-        <input type="text" placeholder="Buscar" />
-        <button type="submit">Buscar</button>
-      </div>
     </div>
   );
 };
