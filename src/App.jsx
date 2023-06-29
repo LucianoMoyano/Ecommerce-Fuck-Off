@@ -12,7 +12,7 @@ export default function App() {
   return (
     <>
       <div>
-        <h1>Proximamente e-Commerce "Fuck Off"</h1>
+        <h1> Fuck Off ©</h1>
         <Subtitle />
         <ProductList />
       </div>
