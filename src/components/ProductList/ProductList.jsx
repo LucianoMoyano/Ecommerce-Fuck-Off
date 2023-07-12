@@ -31,6 +31,9 @@ export const ProductList = () => {
               <img src={item.photo} alt={item.name} />
               <h4>{item.name}</h4>
               <p>{item.description}</p>
+              <p>
+                <strong>$ {item.price}</strong>
+              </p>
             </div>
           ))}
         </div>

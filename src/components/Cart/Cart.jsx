@@ -19,8 +19,8 @@ export const Cart = () => {
 
   // Función para realizar la transacción de compra
   const checkout = () => {
-    // Realizar la lógica de la transacción aquí
-    // Por ejemplo, enviar los productos del carrito a un servidor, procesar el pago, etc.
+    // Realizar la lógica de la transacción aquí, enviar los productos del carrito a un servidor, procesar el pago, etc.
+
     // Puedes reiniciar el estado del carrito después de completar la transacción
     setCartItems([]);
   };
