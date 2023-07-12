@@ -6,7 +6,7 @@ import { Subtitle } from "./components/Subtitulo/Subtitle";
 import { NavBar } from "./components/NavBar/NavBar";
 import { ProductList } from "./components/ProductList/ProductList";
 import { Cart } from "./components/Cart/Cart";
-import { Nosotros } from "./components/Nosotros/Nosotros";
+import { Footer } from "./components/Footer/Footer";
 
 // rutas del sistema
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -23,9 +23,9 @@ export default function App() {
             <Route path="/" element={<Subtitle />} />
             <Route path="/productos" element={<ProductList />} />
             <Route path="/cart" element={<Cart />} />
-            <Route path="/nosotros" element={<Nosotros />} />
             <Route path="/login" element={<Login />} />
           </Routes>
+          <Footer />
         </Router>
       </AuthProvider>
     </>
