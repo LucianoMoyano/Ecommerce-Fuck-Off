@@ -74,19 +74,13 @@ button:focus-visible {
   }
 }
  */
-
+/* 
 :root {
   font-family: "Rubik", sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  /* color-scheme: light dark; */
   color: #1a1a1a;
-
-  /* Fondo de la página
-  foto 1: https://images.pexels.com/photos/10195371/pexels-photo-10195371.jpeg
-  foto2: https://images.pexels.com/photos/12725055/pexels-photo-12725055.jpeg?auto=compress&cs=tinysrgb&w=1600
-  */
 
   background-image: url("https://images.pexels.com/photos/6050919/pexels-photo-6050919.jpeg");
   background-size: cover;
@@ -145,3 +139,4 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+ */

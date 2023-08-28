@@ -1,28 +1,31 @@
 import React from "react";
-
 import "./footer.css";
 
 export const Footer = () => {
   return (
-    <footer>
-      <div className="about-us">
+    <footer className="footer-container">
+      <div className="footer-section about-us">
         <h3>ACERCA DE NOSOTROS</h3>
         <p>
-          Somos una tienda multimarca que comenzó en 2007 con un local ubicado
-          en Morón, Buenos Aires, zona oeste.
+          <strong>Somos una tienda oficial de NIKE®, que comenzó en 2023 con una pagina
+          online.</strong>
           <br />
-          Actualmente, contamos con una tienda online a todo el país.
+          Buscamos que nuestros clientes se sientan plenamente involucrados con
+          lo que representamos, ya sea a través de nuestras tiendas en línea o
+          nuestros productos. Queremos que formen parte de nuestro movimiento.
           <br />
-          Tanto en nuestras tiendas online, como en los productos y la
-          comunicación, buscamos que el cliente se sienta parte de lo que
-          representa nuesro movimiento.
+          <strong><em>Actualmente, contamos con envíos a todo el país.</em></strong>
         </p>
       </div>
-      <div className="information">
+      <div className="footer-section information">
         <h3>INFORMACIÓN</h3>
         <p>
-          Sucursales | Como Comprar? | Medios de Pago | Métodos de envío |
-          Cambios y devoluciones | Contacto
+          <span className="footer-span">Sucursales</span>
+          <span className="footer-span">Cómo Comprar?</span>
+          <span className="footer-span">Medios de Pago</span>
+          <span className="footer-span">Métodos de Envío</span>
+          <span className="footer-span">Cambios y Devoluciones</span>
+          <span className="footer-span">Contacto</span>
         </p>
       </div>
     </footer>

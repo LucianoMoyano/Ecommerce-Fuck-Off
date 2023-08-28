@@ -8,12 +8,10 @@ import { Formulario } from "../Formulario/Formulario";
 export const Subtitle = () => {
   return (
     <div className="subtitle-container">
-      <h1> FUCK OFF ©</h1>
+      <h1> FUCK OFF® </h1>
       <p className="description">
         " Each of our products are created with the highest quality and
-        perfectionism. Looking for a modern and vulgar design.
-        <br />
-        You have to be proud of yourself "
+        perfectionism. Looking for a modern and vulgar design."
       </p>
       <Carousel
         showArrows={true}
@@ -39,12 +37,17 @@ export const Subtitle = () => {
             className="image"
           />
         </div>
+        <div>
+          <img
+            src="https://images.pexels.com/photos/12725050/pexels-photo-12725050.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Espacio Fuck Off"
+            className="image"
+          />
+        </div>
         {/* Agrega más elementos div si tienes más imágenes */}
       </Carousel>
       <p className="description">
-        Te invitamos a sumarte al Espacio FUCK OFF ©, donde puedes conectarte
-        contigo misma a través de diferentes actividades como bailar, correr,
-        practicar yoga o simplemente moverte como más te guste.
+        Te invitamos a sumarte al Espacio FUCK OFF®, donde podes conectarte a través de diferentes actividades como bailar, correr o simplemente moverte como más te guste.
       </p>
       <p className="description">
         <em className="grande">#ConectáConVos</em>
